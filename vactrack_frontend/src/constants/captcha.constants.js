@@ -1,0 +1,4 @@
+export const captchaConstants = {
+  GETCAPTCHA_IMAGE: "GETCAPTCHA_IMAGE",
+  GETCAPTCHA_CODE: "GETCAPTCHA_CODE",
+};

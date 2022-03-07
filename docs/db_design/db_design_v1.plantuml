@@ -1,0 +1,56 @@
+@startuml VacTrack
+entity "user" as e01 {
+  *id: BIGINT <<pk>>
+  --
+  *firstname: VARCHAR(50)
+  *lastname: VARCJAR(50)
+  *email: VARCHAR(100)
+  *password: VARCHAR(20)
+  *created_at: DATETIME
+  *updated_at: DATETIME
+}
+
+entity "dependent" as e02 {
+  *id: BIGINT <<pk>>
+  --
+  *parent_id: USER <<fk>>
+  *first_name: VARCHAR(50)
+  *last_name: VARCHAR(50)
+  *gender: VARCHAR(10)
+  *dob: DATE
+  *profile_photo: VARCHAR(500)
+  *blood_group: VARCHAR(10)
+  *created_at: DATETIME
+  *updated_at: DATETIME
+}
+
+note left of e02::gender
+Male/Female/TransGender
+end note
+
+entity "vaccine schedule" as e03 {
+  *id: BIGINT <<pk>>
+  --
+  *vaccine_id: VACCINE <<fk>>
+  *beneficiary_id: DEPENDENT <<fk>>
+  *dose_number: INT
+  *dose_datetime: DATETIME
+  *created_at: DATETIME
+  *updated_at: DATETIME
+}
+
+entity "vaccine" as e04 {
+  *id: BIGINT <<pk>>
+  --
+  *name: VARCHAR(50)
+  *vac_code: VARCHAR(20)
+  *description: VARCHAR(200)
+  *dosage: INT
+  *created_at: DATETIME
+  *updated_at: DATETIME
+}
+
+e01 ||..o{ e02
+e02 ||..|{ e03
+e03 }|..|| e04
+@enduml

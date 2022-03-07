@@ -1,0 +1,31 @@
+@startuml addVaccine
+       hide footbox
+    center header \n<font color=black size=15>Add Vaccine</font> \n\n
+skinparam dpi 150
+skinparam sequence {
+    LifeLineBorderColor #1F2833
+    ArrowFontSize 10
+    ArrowColor #1F2833
+    ParticipantPadding 20
+    ParticipantFontSize 12
+    ParticipantFontColor #FFFFFF
+    ParticipantBorderColor #14A098
+    ParticipantBackgroundColor #14A098
+}
+
+skinparam ActorBorderColor #14A098
+skinparam DatabaseBorderColor #14A098
+    actor User
+    participant webInterface
+    participant addVaccineAPI
+    database DB
+    User-> webInterface: 
+    activate webInterface
+    webInterface-> addVaccineAPI: add Vacine
+    activate addVaccineAPI
+    addVaccineAPI -> DB : save Vaccine
+    DB -> addVaccineAPI : ok
+    addVaccineAPI -> webInterface: ok
+    deactivate addVaccineAPI
+    webInterface->User
+@enduml

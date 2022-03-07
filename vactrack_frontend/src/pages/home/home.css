@@ -1,0 +1,37 @@
+.main-info {
+  margin-bottom: 80px;
+}
+
+.info {
+  width: 90%;
+}
+
+.info h1 {
+  color: #183b56;
+}
+
+.info p {
+  color: #577592;
+}
+
+.home-vaccine-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-vaccine-image img {
+  width: 586px;
+}
+
+@media (max-width: 1119px) {
+  .main-info {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .info {
+    width: 100%;
+    text-align: center;
+  }
+}

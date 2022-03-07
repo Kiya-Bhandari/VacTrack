@@ -1,0 +1,123 @@
+body {
+  min-height: 100vh;
+}
+
+.navbar-brand img {
+  height: 100px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  /* color: #000; */
+  font-weight: 500;
+  margin: 10px;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.sign-in {
+  color: #000;
+}
+
+.main-screen {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.main-screen div {
+  flex: 1;
+}
+
+.form-container {
+  position: relative;
+}
+
+.card-width {
+  min-width: 70%;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.popover {
+  position: relative;
+}
+
+.popover-panel {
+  position: absolute;
+  z-index: 10;
+  right: 30%;
+  margin-top: 0.25rem;
+  border: 1px solid blue;
+  border-radius: 0.5rem;
+  color: black;
+  background-color: white;
+  width: 500px;
+  max-width: 500px;
+  transform: translateX(50%);
+}
+
+.popover-grid {
+  padding: 5px 0 20px 32px;
+  margin-top: 15px;
+}
+
+.popover-notification {
+  position: relative;
+  display: inline-block;
+}
+
+.popover-notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  transform: translateX(50%) translateY(-50%);
+  background-color: rgb(20, 248, 20);
+  border-radius: 50%;
+}
+
+.avatar {
+  font-weight: 500;
+  background-color: blueviolet;
+  color: red;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+.dropdown-menu {
+  min-width: 6rem;
+}
+
+@media (max-width: 935px) {
+  img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .card-width {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-screen {
+    flex-direction: column-reverse;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .card-width {
+    float: none;
+  }
+}

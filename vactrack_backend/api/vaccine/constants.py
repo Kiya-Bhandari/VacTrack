@@ -1,0 +1,5 @@
+VACCINE = 'vaccine'
+VACCINE_VERBOSE_NAME='Vaccine'
+VACCINE_VERBOSE_NAME_PLURAL='Vaccines'
+VACCINE_CHANGE_BUTTON_HTML = '<a href="/admin/vaccine/vaccine/{}/change/">Edit</a>'
+VACCINE_DELETE_BUTTON_HTML = '<a href="/admin/vaccine/vaccine/{}/delete/" class="deletelink">Delete</a>'

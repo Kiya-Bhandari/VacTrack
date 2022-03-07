@@ -1,0 +1,6 @@
+export const API = process.env.REACT_APP_BACKEND;
+export const GRAPHQL_USER = process.env.REACT_APP_GRAPHQL_USER;
+export const GRAPHQL_VACCINE = process.env.REACT_APP_GRAPHQL_VACCINE;
+export const GRAPHQL_DEPENDENT = process.env.REACT_APP_GRAPHQL_DEPENDENT;
+export const GRAPHQL_VACCINE_SCHEDULE =
+  process.env.REACT_APP_GRAPHQL_VACCINE_SCHEDULE;

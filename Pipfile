@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+python-decouple = "*"
+django-cors-headers = "*"
+djangorestframework = "*"
+psycopg2-binary = "*"
+djangorestframework-simplejwt = "*"
+pyotp = "*"
+graphene-django = "*"
+django-graphql-jwt = "*"
+django-graphql-auth = "*"
+twilio = "*"
+django-apscheduler = "*"
+pylint = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true

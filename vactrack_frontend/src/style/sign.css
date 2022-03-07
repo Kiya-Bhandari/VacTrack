@@ -1,0 +1,44 @@
+.sign {
+  float: right;
+  margin-right: 19px;
+}
+
+.vaccine-image img {
+  width: 586px;
+}
+
+.help-text {
+  float: center;
+  margin: 10px 0 0 10px;
+}
+
+.forgot-password {
+  float: right;
+}
+
+#inputGroupText {
+  cursor: pointer;
+}
+
+/* .captcha-canvas {
+  position: relative;
+}
+
+.captcha-code {
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  position: absolute;
+  right: 11px;
+} */
+
+@media (max-width: 1070px) {
+  .vaccine-image img {
+    width: 566px;
+  }
+}
+
+@media (max-width: 1052px) {
+  .vaccine-image img {
+    width: 534px;
+  }
+}

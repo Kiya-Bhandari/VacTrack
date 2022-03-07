@@ -1,0 +1,28 @@
+@startuml signup
+hide footbox
+    center header \n<font color=black size=15>SignUp</font> \n\n
+skinparam dpi 150
+skinparam sequence {
+    LifeLineBorderColor #1F2833
+    ArrowFontSize 10
+    ArrowColor #1F2833
+    ParticipantPediting 20
+    ParticipantFontSize 12
+    ParticipantFontColor #FFFFFF
+    ParticipantBorderColor #14A098
+    ParticipantBackgroundColor #14A098
+}
+
+skinparam ActorBorderColor #14A098
+skinparam DatabaseBorderColor #14A098
+    actor User
+    participant SignUp
+    database DB
+    User -> SignUp : required information
+    activate SignUp
+    SignUp -> DB : store information
+    DB -> SignUp : ok
+    SignUp -> User : ok
+    deactivate SignUp
+@enduml
+    

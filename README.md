@@ -11,7 +11,7 @@ Please refer to the below link of pep8 coding guidlines.
 
 ## React
 
-Please refer to the below link of aitbnb React coding guidlines.
+Please refer to the below link of airbnb React coding guidlines.
 
 * https://airbnb.io/javascript/react/#basic-rules
 
